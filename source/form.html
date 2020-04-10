@@ -59,7 +59,7 @@
           <label class="user-group__label" for="name-field">Имя
             <sup>*</sup>:
           </label>
-          <input class="user-group__input" type="text" name="name" id="name-field"
+          <input required class="user-group__input" type="text" name="name" id="name-field"
           placeholder="Петр">
         </div>
         <div class="user-group__wrap">
@@ -67,7 +67,7 @@
             Фамилия
             <sup>*</sup>:
           </label>
-          <input class="user-group__input" type="text" name="surname" id="surname-field"
+          <input required class="user-group__input" type="text" name="surname" id="surname-field"
           placeholder="Иванов">
         </div>
         <div class="user-group__wrap">
@@ -86,7 +86,7 @@
             Контактный телефон
             <sup>*</sup>:
           </label>
-          <input class="contact-group__input" type="tel" name="phone" id="phone-field"
+          <input required class="contact-group__input" type="tel" name="phone" id="phone-field"
           placeholder="Введите телефон">
         </div>
         <div class="contact-group__wrap">
@@ -94,7 +94,7 @@
             Электронная почта
             <sup>*</sup>:
           </label>
-          <input class="contact-group__input" type="email" name="email" id="email-field" placeholder="Введите e-mail">
+          <input required class="contact-group__input" type="email" name="email" id="email-field" placeholder="Введите e-mail">
         </div>
       </fieldset>
       <fieldset class="feedback-form__group radio-group">
@@ -159,7 +159,7 @@
     <p class="popup__info">
       Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить
     </p>
-    <button class="popup__button button" type="submit">Ок</button>
+    <button class="popup__button button" type="button">Ок</button>
   </div>
   <div class="popup popup--sucess">
     <h2 class="popup__heading">Ваш отзыв отправлен!
@@ -167,7 +167,7 @@
     <p class="popup__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
      В ближайшее время мы опубликуем его на сайте.
    </p>
-   <button class="popup__button button" type="submit">Закрыть окно</button>
+   <button class="popup__button button" type="button">Закрыть окно</button>
  </div>
 </section>
 </main>
