@@ -1,0 +1,7 @@
+.photo-list__figcaption {
+  @include text-caption;
+}
+
+.photo-list__author {
+  @include text-author;
+}

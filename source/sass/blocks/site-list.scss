@@ -1,0 +1,5 @@
+.site-list {
+  background: $color-main;
+
+  @include text-nav-menu;
+}

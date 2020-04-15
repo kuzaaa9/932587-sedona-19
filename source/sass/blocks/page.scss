@@ -1,0 +1,11 @@
+.page {
+  background-color: $color-background;
+}
+
+.page__heading {
+  @include text-heading;
+}
+
+.page__subheading {
+  @include text-label;
+}

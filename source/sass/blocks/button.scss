@@ -1,0 +1,5 @@
+.button {
+  @include text-heading;
+  color: $text-secondary-color;
+  background: $color-main;
+}

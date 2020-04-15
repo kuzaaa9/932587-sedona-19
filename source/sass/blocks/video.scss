@@ -1,0 +1,7 @@
+.video__heading {
+  @include text-heading;
+}
+
+.video__subheading {
+  @include text-content;
+}

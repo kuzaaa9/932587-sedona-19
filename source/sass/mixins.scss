@@ -1,0 +1,74 @@
+@mixin text-heading {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@mixin text-heading-tablet {
+  @include text-heading;
+  font-size: 30px;
+}
+
+@mixin text-heading-desktop {
+  @include text-heading;
+  font-size: 21px;
+}
+
+@mixin text-content {
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-primary-color;
+  text-transform: uppercase;
+}
+
+@mixin text-label {
+  font-size: 14px;
+  line-height: 26px;
+  color: $text-primary-color;
+  text-transform: uppercase;
+}
+
+@mixin text-input {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+@mixin text-caption {
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-primary-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+@mixin text-author {
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-primary-color;
+}
+
+@mixin text-nav-menu {
+  font-size: 18px;
+  line-height: 40px;
+  color: $text-secondary-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@mixin text-submit {
+  font-size: 21px;
+  line-height: 26px;
+  color: $text-secondary-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@mixin push-auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}

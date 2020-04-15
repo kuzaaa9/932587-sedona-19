@@ -1,0 +1,5 @@
+.comment-group__textarea {
+  background: $color-secondary;
+
+  @include text-input;
+}
