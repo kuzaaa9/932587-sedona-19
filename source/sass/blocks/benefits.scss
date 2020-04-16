@@ -1,0 +1,16 @@
+.benefits__item--color {
+  background: $color-main-second;
+  color: $text-heading-color;
+}
+
+.benefits__subtitle {
+  @include text-heading;
+}
+
+.benefits__number {
+  @include text-content;
+}
+
+.benefits__info {
+  @include text-content;
+}

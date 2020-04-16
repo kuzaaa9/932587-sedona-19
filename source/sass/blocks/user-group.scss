@@ -1,0 +1,9 @@
+.user-group__input {
+  background: $color-secondary;
+
+  @include text-input;
+}
+
+.user-group__label {
+  @include text-label;
+}
