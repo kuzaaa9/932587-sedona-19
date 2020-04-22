@@ -1,7 +1,21 @@
+.photo-list {
+  padding: 0 20px;
+}
+
+.photo-list__item{
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo-list__figure {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
 .photo-list__figcaption {
   @include text-caption;
 }
 
 .photo-list__author {
   @include text-author;
+  text-transform: capitalize;
 }

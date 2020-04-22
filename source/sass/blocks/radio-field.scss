@@ -1,5 +1,3 @@
-.radio-field__input {
-  background: $color-secondary;
-
+.radio-field__label {
   @include text-input;
 }

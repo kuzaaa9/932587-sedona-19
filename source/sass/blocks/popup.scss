@@ -1,11 +1,20 @@
+.popup {
+  padding: 0 20px;
+}
+
+
 .popup__heading {
   @include text-heading;
-  color: $text-secondary-color;
   font-size: 21px;
+}
+
+.popup__info {
+  @include text-content;
 }
 
 .popup__button {
   @include text-heading;
   color: $text-secondary-color;
   background: $color-main;
+  outline: none;
 }

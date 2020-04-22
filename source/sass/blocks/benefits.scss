@@ -1,16 +1,37 @@
-.benefits__item--color {
+.benefits {
+  position: relative;
+  text-align: center;
+  &:before {
+  position: absolute;
+  content:"";
+  background-image:url("../../img/bg-intro-triangle-mobile-blue.svg");
+  width: 320px;
+  height: 26px;
+  top: -26px;
+  left: 0;
+  }
+  }
+
+.benefits--color-blue {
+  background: $color-main;
+
+  .benefits__subtitle {
+    @include text-heading;
+    color: $text-secondary-color;
+  }
+
+  .benefits__number,
+  .benefits__info {
+    @include text-content;
+    color: $text-secondary-color;
+  }
+}
+
+.benefits--color-gray {
   background: $color-main-second;
-  color: $text-heading-color;
+  border-bottom: 1px solid #e5e5e5;
 }
-
-.benefits__subtitle {
-  @include text-heading;
-}
-
-.benefits__number {
-  @include text-content;
-}
-
-.benefits__info {
-  @include text-content;
+.benefits__content {
+  @include push-auto;
+  padding: 45px 20px;
 }

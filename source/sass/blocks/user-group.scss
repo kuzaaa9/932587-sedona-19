@@ -1,9 +1,25 @@
-.user-group__input {
-  background: $color-secondary;
+.user-group {
+  display: flex;
+  width: 100%;
+}
 
+.user-group__wrap {
+  width: 280px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.user-group__input {
+  display: block;
+  padding: 20px 0 20px 20px;
+  background: $color-secondary;
   @include text-input;
 }
 
 .user-group__label {
+  display: block;
+  padding-right: 20px;
   @include text-label;
 }

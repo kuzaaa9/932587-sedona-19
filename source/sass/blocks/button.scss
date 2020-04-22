@@ -1,4 +1,5 @@
 .button {
+  padding: 20px 30px;
   @include text-heading;
   color: $text-secondary-color;
   background: $color-main;

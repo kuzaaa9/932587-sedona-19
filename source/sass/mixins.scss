@@ -1,3 +1,4 @@
+// Миксины для шрифтов
 @mixin text-heading {
   font-size: 18px;
   line-height: 26px;
@@ -7,7 +8,7 @@
 
 @mixin text-heading-tablet {
   @include text-heading;
-  font-size: 30px;
+  font-size: 21px;
 }
 
 @mixin text-heading-desktop {
@@ -33,21 +34,24 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  color: $text-heading-color;
+  text-transform: none;
 }
 
 @mixin text-caption {
   font-size: 14px;
   line-height: 24px;
+  font-weight: bold;
   color: $text-primary-color;
   text-transform: uppercase;
-  font-weight: bold;
-}
 
+}
 
 @mixin text-author {
   font-size: 14px;
   line-height: 24px;
   color: $text-primary-color;
+  text-transform :none;
 }
 
 @mixin text-nav-menu {
@@ -66,9 +70,15 @@
   font-weight: bold;
 }
 
+// Миксины центровщики буду применять для центровки страниц
 @mixin push-auto {
-  margin: {
-    left: auto;
-    right: auto;
-  }
+  margin: 0 auto;
+}
+
+// миксин сброс дефолтных стилей у списков
+@mixin list-reset($padding-left: 0) {
+  margin: 0;
+  padding-left: $padding-left;
+  list-style: none;
+  padding-inline-start: 0;
 }

@@ -1,3 +1,22 @@
+.social-btn-list {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
 .social-btn-list__item {
   background: $color-main;
+  width: 45px;
+  height: 45px;
+}
+
+.social-btn-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-btn-list__icon {
+
 }

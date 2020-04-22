@@ -1,0 +1,32 @@
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  border: 0 none;
+}
+
+ul {
+  @include list-reset;
+  // запихни в лист-ресет
+
+}
+
+body {
+  margin: 0;
+  color: $text-primary-color;
+  text-transform: uppercase;
+  background-color: $color-secondary;
+  font-family: "PT Sans Regular", sans-serif;
+}
+
+fieldset {
+  border: none;
+}
