@@ -12,15 +12,15 @@
   padding-bottom: 20px;
   padding-left: 70px;
   text-align: start;
-  }
+}
 
 .more-list__advantage {
   @include text-heading;
 }
 
 .more-list--icon1::before {
+  content: "";
   position: absolute;
-  content:"";
   background-image: url("../img/icon-house.svg");
   width: 37px;
   height: 37px;
@@ -29,8 +29,8 @@
 }
 
 .more-list--icon2::before {
+  content: "";
   position: absolute;
-  content:"";
   background-image: url("../img/icon-gift.svg");
   width: 37px;
   height: 37px;
@@ -39,8 +39,8 @@
 }
 
 .more-list--icon3::before {
+  content: "";
   position: absolute;
-  content:"";
   background-image: url("../img/icon-burger.svg");
   width: 37px;
   height: 37px;

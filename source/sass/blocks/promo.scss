@@ -1,19 +1,19 @@
-// В моем пониманиии промо и промо img-единый блок ,а модификаторы нужны только для позиционирования относительно меню
-
 .promo {
   position: relative;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   width: 320px;
   height: 390px;
+
   &:after {
-  position: absolute;
-  content:"";
-  background-image:url("../../img/bg-intro-triangle-mobile.svg");
-  width: 320px;
-  height: 26px;
-  top: 364px;
-  left: 0;
+    position: absolute;
+    content: "";
+    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+    width: 320px;
+    height: 26px;
+    top: 364px;
+    left: 0;
   }
+
 }
 
 .promo__img {

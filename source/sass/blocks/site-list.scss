@@ -1,6 +1,4 @@
 .site-list {
-  // display: flex;
-  // width: 320px;
   background: $color-main;
 }
 
@@ -10,9 +8,11 @@
   padding: 8px 0;
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
+
   &:first-child {
     border-top: none;
   }
+
   &:last-child {
     border-bottom: none;
   }
@@ -20,14 +20,18 @@
   &:hover {
     background-color: $color-main-hover;
   }
+
   &:active {
     background-color: $color-main-active;
   }
+
 }
-// не могу поменять цвет букв при ссылке- пробовала и инклюде в строке 31и все
+
 .site-list__link {
   @include text-nav-menu;
+
   &:active {
     color: $text-active-color;
   }
+
 }
