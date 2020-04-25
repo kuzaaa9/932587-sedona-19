@@ -4,6 +4,12 @@
 
 .main-nav__toggle {
   position: absolute;
-  right: 0;
-  padding-top: 20px;
+  right: 20px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-color: $color-main;
+  border: none;
 }

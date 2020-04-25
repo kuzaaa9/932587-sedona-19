@@ -2,19 +2,22 @@
   position: relative;
   text-align: center;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/bg-intro-triangle-mobile-blue.svg");
+    background-image: url("../img/bg-intro-triangle-mobile-blue.svg");
     width: 320px;
     height: 26px;
     top: -26px;
     left: 0;
   }
-
 }
 
-.benefits--color-blue {
+.benefits__list {
+  @include list-reset;
+}
+
+.benefits__content--color-blue {
   background: $color-main;
 
   .benefits__subtitle {
@@ -27,10 +30,9 @@
     @include text-content;
     color: $text-secondary-color;
   }
-
 }
 
-.benefits--color-gray {
+.benefits__content--color-gray {
   background: $color-main-second;
   border-bottom: 1px solid #e5e5e5;
 }

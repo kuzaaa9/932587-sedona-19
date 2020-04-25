@@ -1,0 +1,17 @@
+.video-group {
+  text-align: center;
+}
+
+.video-group__heading {
+  @include text-heading;
+}
+
+.video-group__subheading {
+  @include text-content;
+}
+
+.video {
+  background-image: url("../img/video-mobile@1x.jpg");
+  width: 100%;
+  height: auto;
+}

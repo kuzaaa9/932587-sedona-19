@@ -1,10 +1,12 @@
-.more-list {
-}
-
 .more-list__item {
   position: relative;
+
   @include text-content;
   background-color: $color-background;
+}
+
+.more-list {
+  @include list-reset;
 }
 
 .more-list__content {
@@ -18,7 +20,7 @@
   @include text-heading;
 }
 
-.more-list--icon1::before {
+.more-list__item--icon1::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-house.svg");
@@ -28,7 +30,7 @@
   left: 0;
 }
 
-.more-list--icon2::before {
+.more-list__item--icon2::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-gift.svg");
@@ -38,7 +40,7 @@
   left: 0;
 }
 
-.more-list--icon3::before {
+.more-list__item--icon3::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-burger.svg");

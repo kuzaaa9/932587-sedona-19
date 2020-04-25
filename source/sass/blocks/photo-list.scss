@@ -1,9 +1,6 @@
 .photo-list {
+  @include list-reset;
   padding: 0 20px;
-}
-
-.photo-list__item {
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .photo-list__figure {

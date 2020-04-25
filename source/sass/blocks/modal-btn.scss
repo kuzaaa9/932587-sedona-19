@@ -1,6 +1,7 @@
 .modal-btn {
   padding: 20px 45px;
   background: $color-main;
+
   @include text-submit;
 
   &:hover {

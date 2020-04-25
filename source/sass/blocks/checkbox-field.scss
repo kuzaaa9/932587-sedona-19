@@ -1,3 +1,7 @@
 .checkbox-field__label {
   @include text-input;
 }
+
+.checkbox-field__input {
+  border: none;
+}

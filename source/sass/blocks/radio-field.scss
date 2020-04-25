@@ -1,3 +1,7 @@
 .radio-field__label {
   @include text-input;
 }
+
+.radio-field__input {
+  border: none;
+}

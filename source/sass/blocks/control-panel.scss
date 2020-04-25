@@ -1,4 +1,24 @@
+.control-panel {
+  padding: 0 20px;
+  min-height: 90px;
+}
+
+.control-panel__elements {
+  display: flex;
+  height: 45px;
+  padding: 0 5px;
+  background-color: $color-accent;
+  opacity: 60%;
+}
+
+.control-panel__toggle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
 .control-panel__buttons {
   display: flex;
   background: $color-secondary;
+  height: 65px;
 }
