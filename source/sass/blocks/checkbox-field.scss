@@ -1,5 +1,7 @@
-.checkbox-field__input {
-  background: $color-secondary;
-
+.checkbox-field__label {
   @include text-input;
+}
+
+.checkbox-field__input {
+  border: none;
 }

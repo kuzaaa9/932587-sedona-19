@@ -1,0 +1,25 @@
+.promo {
+  position: relative;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  width: 320px;
+  height: 390px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    width: 320px;
+    height: 26px;
+    top: 364px;
+    left: 0;
+  }
+}
+
+.promo__img {
+  position: absolute;
+  display: block;
+  bottom: 75px;
+  width: 280px;
+  height: 215px;
+  padding: 0 20px;
+}

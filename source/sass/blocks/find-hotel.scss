@@ -1,3 +1,12 @@
+.find-hotel {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.find-hotel__content {
+  padding: 45px 20px;
+}
+
 .find-hotel__subheading {
   @include text-content;
 }

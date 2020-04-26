@@ -1,6 +1,8 @@
 @import "mixins";
 @import "colors";
 @import "variables";
+@import "fonts";
+@import "global";
 @import "blocks/benefits";
 @import "blocks/button";
 @import "blocks/checkbox-field";
@@ -10,7 +12,7 @@
 @import "blocks/control-panel";
 @import "blocks/copyright";
 @import "blocks/feedback";
-@import "blocks/find-hotel-map";
+@import "blocks/map-sedona";
 @import "blocks/find-hotel";
 @import "blocks/footer";
 @import "blocks/fullscreen-btn";
@@ -31,5 +33,5 @@
 @import "blocks/social-btn-list";
 @import "blocks/subtitles-btn";
 @import "blocks/user-group";
-@import "blocks/video";
-@import "blocks/visually-hidden";
+@import "blocks/video-group";
+@import "blocks/container"
