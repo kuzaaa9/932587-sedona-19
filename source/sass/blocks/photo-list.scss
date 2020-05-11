@@ -1,4 +1,6 @@
 .photo-list {
+  width: 100%;
+
   @include list-reset;
   padding: 0 20px;
 }

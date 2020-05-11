@@ -1,15 +1,58 @@
 .main-nav {
   position: relative;
+  width: 100%;
+  min-height: 224px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    min-height: 56px;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+  padding: 0;
 }
 
 .main-nav__toggle {
   position: absolute;
-  right: 20px;
-  top: 15px;
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/icon-cross.svg");
-  background-repeat: no-repeat;
   background-color: $color-main;
+  cursor: pointer;
   border: none;
+  top: 0;
+  right: 0;
+  margin-top: 18px;
+  margin-right: 20px;
+
+  &:hover {
+    background-color: $color-main-hover;
+  }
+
+  &:active {
+    background-color: $color-main-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav__toggle-icon {
+  polygon {
+    fill: $color-background;
+
+    &:hover {
+      fill: #cde1ed;
+    }
+
+    &:active {
+      fill: #a5c8df;
+    }
+  }
 }

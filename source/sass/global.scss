@@ -8,6 +8,18 @@ body {
   background-color: $color-secondary;
 }
 
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: 1200px;
+  }
+}
+
 a {
   text-decoration: none;
 }

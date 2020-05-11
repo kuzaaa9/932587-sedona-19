@@ -1,13 +1,47 @@
-.page__intro {
-  position: relative;
-  padding: 45px 20px;
+.page {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
   text-align: center;
 }
 
+.page__intro {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  min-width: 320px;
+  padding: 45px 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .page__intro {
+    padding: 45px 20px 35px;
+  }
+}
+
 .page__heading {
+  width: 255px;
+  padding-bottom: 30px;
+
   @include text-heading;
+}
+
+@media (min-width: $tablet-width) {
+  .page__heading {
+    width: 445px;
+
+    @include text-heading-tablet;
+  }
 }
 
 .page__subheading {
   @include text-label;
+}
+
+@media (min-width: $tablet-width) {
+  .page__subheading {
+    width: 495px;
+  }
 }

@@ -1,4 +1,19 @@
+.copyright {
+  display: flex;
+}
+
 .copyright__text {
+  display: block;
+
   @include text-label;
   color: $text-heading-color;
+}
+
+.copyright__link {
+  text-align: center;
+  width: 34px;
+}
+
+.copyright__img {
+  vertical-align: middle;
 }
