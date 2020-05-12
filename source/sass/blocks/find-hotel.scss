@@ -31,6 +31,8 @@
 }
 
 .find-hotel__heading {
+  text-align: center;
+
   @include text-heading-tablet;
 }
 
@@ -44,6 +46,7 @@
 .find-hotel__subheading {
   padding-bottom: 5px;
   margin-bottom: 40px;
+  text-align: center ;
 
   @include text-content;
 }

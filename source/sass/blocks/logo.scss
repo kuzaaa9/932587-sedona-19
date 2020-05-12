@@ -1,16 +1,18 @@
 .logo {
-  display: block;
 }
 
 .logo__link {
-  text-align: center;
   height: auto;
 }
 
+.logo__img {
+    width: 105px;
+    height: 83px;
+    background-image: url("../img/logo-sedona-mobile.svg");
+  }
+
 @media (min-width: $tablet-width) {
   .logo__img {
-    width: 102px;
-    height: 83px;
     background-image: url("../img/logo-sedona-tablet.svg");
   }
 }

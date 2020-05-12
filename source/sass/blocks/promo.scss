@@ -1,9 +1,5 @@
 .promo {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
   height: 390px;
   box-sizing: border-box;
   padding-top: 90px;
@@ -16,15 +12,14 @@
   &::after {
     content: "";
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50%;
     width: 320px;
     height: 27px;
     bottom: 0;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -48,12 +43,15 @@
 
     &::after {
       background-image: url("../img/bg-intro-triangle-desktop.svg");
+      width: $desktop-width;
     }
   }
 }
 
-.promo--base {
-  height: 160px;
+.promo--extended {
+  height: 158px;
+  padding-top: 0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
 
   &::after {
     background-image: url("../img/bg-intro-triangle-desktop.svg");
@@ -61,13 +59,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo--base {
-    height: 340px;
+  .promo--extended {
+    height: 292px;
+
   }
 }
 
+// почему то не меняется высота
 @media (min-width: $desktop-width) {
-  .promo--base {
-    height: 305px;
+  .promo-extended {
+    height: 306px;
   }
+}
+
+.promo__img {
+  width: 0;
 }
