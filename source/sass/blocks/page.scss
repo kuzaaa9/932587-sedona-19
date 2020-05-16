@@ -1,31 +1,27 @@
 .page {
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
-  align-items:center;
-
+  position: relative;
 }
 
 .page__intro {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  align-items: center;
   min-width: 320px;
-  padding: 45px 20px;
+  padding: 40px 20px 25px;
   box-sizing: border-box;
+  border-bottom: 1px solid $color-secondary-active;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .page__intro {
-    padding: 45px 20px 35px;
+    padding: 70px 20px 30px;
+    border-bottom: none;
   }
 }
 
 .page__heading {
   width: 255px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
+  margin: 0 auto;
 
   @include text-heading;
 }
@@ -39,6 +35,8 @@
 }
 
 .page__subheading {
+  margin: 0 auto;
+
   @include text-label;
 }
 

@@ -61,14 +61,14 @@
 .main-nav__logo {
   position: absolute;
   z-index: 1;
-  bottom: -27px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__logo {
-    bottom: -17px;
+    bottom: -16px;
   }
 }
 

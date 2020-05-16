@@ -16,10 +16,9 @@
     background-repeat: no-repeat;
     background-position: 50%;
     width: 320px;
-    height: 27px;
+    height: 55px;
     bottom: 0;
-    margin: 0 auto;
-    text-align: center;
+    left: 0;
   }
 }
 
@@ -32,7 +31,6 @@
     &::after {
       background-image: url("../img/bg-intro-triangle-tablet.svg");
       width: $tablet-width;
-      height: 63px;
     }
   }
 }
@@ -61,11 +59,9 @@
 @media (min-width: $tablet-width) {
   .promo--extended {
     height: 292px;
-
   }
 }
 
-// почему то не меняется высота
 @media (min-width: $desktop-width) {
   .promo-extended {
     height: 306px;

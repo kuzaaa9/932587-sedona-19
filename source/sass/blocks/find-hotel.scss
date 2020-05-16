@@ -3,6 +3,7 @@
   min-height: 285px;
   box-sizing: border-box;
   padding: 35px 20px 50px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,8 +32,6 @@
 }
 
 .find-hotel__heading {
-  text-align: center;
-
   @include text-heading-tablet;
 }
 
@@ -46,7 +45,7 @@
 .find-hotel__subheading {
   padding-bottom: 5px;
   margin-bottom: 40px;
-  text-align: center ;
+  text-align: center;
 
   @include text-content;
 }
