@@ -1,13 +1,47 @@
+.page {
+  position: relative;
+}
+
 .page__intro {
   position: relative;
-  padding: 45px 20px;
+  min-width: 320px;
+  padding: 40px 20px 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $color-secondary-active;
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .page__intro {
+    padding: 70px 20px 30px;
+    border-bottom: none;
+  }
+}
+
 .page__heading {
+  width: 255px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+
   @include text-heading;
 }
 
+@media (min-width: $tablet-width) {
+  .page__heading {
+    width: 445px;
+
+    @include text-heading-tablet;
+  }
+}
+
 .page__subheading {
+  margin: 0 auto;
+
   @include text-label;
+}
+
+@media (min-width: $tablet-width) {
+  .page__subheading {
+    width: 495px;
+  }
 }

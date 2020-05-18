@@ -1,18 +1,122 @@
 .photo-list {
+  margin: 0;
+
   @include list-reset;
-  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 45px 60px 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list {
+    padding: 45px 0 10px;
+  }
+}
+
+.photo-list__item {
+  border-bottom: 1px solid $color-secondary-active;
+  padding: 20px 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list__item {
+    border-bottom: none;
+    padding: 0;
+  }
 }
 
 .photo-list__figure {
-  margin: 0 auto;
-  padding: 10px 0;
+  position: relative;
+  margin: 0;
+}
+
+.photo-list__img {
+  display: block;
+  width: 284px;
+  height: 284px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list__img {
+    width: 324px;
+    height: 265px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list__img {
+    width: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list__img--first {
+    width: 648px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list__img--first {
+    width: 1200px;
+  }
 }
 
 .photo-list__figcaption {
-  @include text-caption;
+  margin: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list__figcaption {
+    padding: 15px 20px;
+    background-color: $color-secondary;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list__figcaption--dark {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list__figcaption {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #181f08;
+    opacity: 0.6;
+  }
+}
+
+.photo-list__heading {
+  margin: 0;
+  padding-bottom: 5px;
+
+  @include text-content;
+  color: $text-heading-color;
+  font-weight: bold;
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list__heading,
+  .photo-list__author {
+    color: $text-secondary-color;
+  }
 }
 
 .photo-list__author {
-  @include text-author;
-  text-transform: capitalize;
+  margin: 0;
+  text-transform: none;
 }

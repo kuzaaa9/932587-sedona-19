@@ -1,6 +1,12 @@
 .container {
+  margin: 0 auto;
   width: 320px;
 
-  @include push-auto;
-  background-color: $color-background;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }

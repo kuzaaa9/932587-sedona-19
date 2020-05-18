@@ -4,52 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>HTML Academy: Седона-главная страница</title>
+  <title>HTML Academy:Седона-главная страница</title>
 </head>
 <body>
   <div class="container">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--opened">
         <button class="main-nav__toggle" type="button">
+          <svg  class="main-nav__toggle-icon" width="24" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+            <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__list">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list site-list__item--active">
-              <a class="site-list__link">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">
-                Фото и видео
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                Форма отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__logo logo">
+          <a class="logo__link">
+            <img class="logo__img" src="img/logo-sedona-mobile.svg" width="105" height="85" alt="Логотип «Седона»">
+          </a>
         </div>
-        <a class="logo">
-          <img class="logo__img" src="img/logo-sedona-mobile.svg"
-          width="105" height="83" alt="Логотип «Седона»">
-        </a>
       </nav>
       <div class="promo promo--extended">
-        <img class="promo__img" src="img/text-sedona-index.svg"
-        alt="промо-текст">
+        <img class="promo__img" src="img/text-sedona-index.svg" alt="промо-текст">
       </div>
     </header>
     <main class="page">
       <div class="page__intro">
         <h1 class="page__heading ">
-          Седона — небольшой городок в АРИЗОНЕ,заслуживающий большего!
+          Седона — небольшой городок в АРИЗОНЕ, <br> заслуживающий большего!
         </h1>
         <p class="page__subheading">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
@@ -57,17 +59,17 @@
       <section class="benefits">
         <h2 class="visually-hidden">Достоинства Седоны</h2>
         <ul class="benefits__list">
-          <li class="benefits__item">
-            <div class="benefits__content benefits__content--color-blue">
+          <li class="benefits__item benefits__item--first">
+            <div class="benefits__content">
               <h3 class="benefits__subtitle">Настоящий городок</h3>
               <p class="benefits__number">— №1 —</p>
               <p class="benefits__info">Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
             <div class="benefits__el">
-              <img class="benefits__img" src="img/main-city-mobile@1x.jpg"
-              width="320" height="260" alt="Фото моего города">
             </div>
+          </li>
+          <li class="benefits__item  more">
             <ul class="more-list">
               <li class="more-list__item more-list__item--icon1">
                 <div class="more-list__content">
@@ -79,8 +81,7 @@
               <li class="more-list__item more-list__item--icon2">
                 <div class="more-list__content">
                   <h4 class="more-list__advantage">СУВЕНИРЫ</h4>
-                  <p class="more-list__info">Не только китайского,
-                    но и местного производства!
+                  <p class="more-list__info">Не только китайского, но и местного производства!
                   </p>
                 </div>
               </li>
@@ -93,34 +94,32 @@
               </li>
             </ul>
           </li>
-          <li class="benefits__item">
-            <div class="benefits__content benefits__content--color-blue">
+          <li class="benefits__item benefits__item--second">
+            <div class="benefits__content">
               <h3 class="benefits__subtitle">Там есть мост дьявола</h3>
               <p class="benefits__number">— №2 —</p>
               <p class="benefits__info">Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
             <div class="benefits__el">
-              <img class="benefits__img" src="img/photo-bridge-mobile@1x.jpg"
-              width="320" height="260" alt="Фото моста">
             </div>
           </li>
-          <li class="benefits__item">
-            <div class="benefits__content benefits__content--color-gray">
+          <li class="benefits__item benefits__item--gray">
+            <div class="benefits__content">
               <h3 class="benefits__subtitle">Небольшая площадь</h3>
               <p class="benefits__number">— №3 —</p>
               <p class="benefits__info">Все интересные места находятся очень близко</p>
             </div>
           </li>
-          <li class="benefits__item">
-            <div class="benefits__content benefits__content--color-gray">
+          <li class="benefits__item benefits__item--gray">
+            <div class="benefits__content">
               <h3 class="benefits__subtitle">КРАСИВАЯ ДОРОГА</h3>
               <p class="benefits__number">— №4 —</p>
               <p class="benefits__info">Ехать  в СЕДОНУ ИЗ ЛАС-ВЕГАСА  совсем нескучно</p>
             </div>
           </li>
-          <li class="benefits__item">
-            <div class="benefits__content benefits__content--color-gray">
+          <li class="benefits__item benefits__item--gray">
+            <div class="benefits__content">
               <h3 class="benefits__subtitle">МАЛО ТУРИСТОВ</h3>
               <p class="benefits__number">— №5 —</p>
               <p class="benefits__info">Большинство едет в Гранд Каньон и
@@ -143,38 +142,33 @@
       </section>
       <section class="map-sedona">
       </section>
-      <footer class="footer">
-        <b class="footer__hashtag">#WISITSEDONA</b>
-        <ul class="footer__list social-btn-list">
-          <li class="social-btn-list__item">
-            <a class="social-btn-list__link" href="https://twitter.com/htmlacademy_ru">
-              <img class="social-btn-list__icon" src="img/icon-twitter.svg"
-              alt="Логотип Твиттер">
-            </a>
-          </li>
-          <li class="social-btn-list__item">
-            <a class="social-btn-list__link"
-            href="https://facebook.com/htmlacademy">
-            <img class="social-btn-list__icon" src="img/icon-facebook.svg"
-            alt="Логотип Фейсбук">
+    </main>
+    <footer class="footer">
+      <b class="footer__hashtag">#WISITSEDONA</b>
+      <ul class="footer__list social-btn-list">
+        <li class="social-btn-list__item">
+          <a class="social-btn-list__link" href="https://twitter.com/htmlacademy_ru">
+            <img class="social-btn-list__icon" src="img/icon-twitter.svg" alt="Логотип Твиттер">
+          </a>
+        </li>
+        <li class="social-btn-list__item">
+          <a class="social-btn-list__link" href="https://facebook.com/htmlacademy">
+            <img class="social-btn-list__icon" src="img/icon-facebook.svg" alt="Логотип Фейсбук">
           </a>
         </li>
         <li class="social-btn-list__item">
           <a class="social-btn-list__link" href="https://www.youtube.com/html">
-            <img class="social-btn-list__icon" src="img/icon-youtube.svg"
-            alt="Логотип Ютуб">
+            <img class="social-btn-list__icon" src="img/icon-youtube.svg" alt="Логотип Ютуб">
           </a>
         </li>
       </ul>
       <div class="footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__img" src="img/htmlacademy.svg"
-          width="27" height="34" alt="Логотип HTML академии">
+          <img class="copyright__img" src="img/htmlacademy.svg" width="28" height="34" alt="Логотип HTML академии">
         </a>
       </div>
     </footer>
-  </main>
-</div>
+  </div>
 </body>
 </html>
