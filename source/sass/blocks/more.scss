@@ -58,6 +58,7 @@
 
 @media (min-width: $tablet-width) {
   .more-list__advantage {
+    margin: 0;
     padding-bottom: 8px;
 
     @include text-heading-tablet;
@@ -85,10 +86,14 @@
   content: "";
   position: absolute;
   background-image: url("../img/icon-house.svg");
-  width: 37px;
-  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 39px;
+  height: 38px;
   top: 0;
   left: 0;
+  margin-top: 35px;
+  margin-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -101,51 +106,62 @@
     top: 61px;
     left: 50%;
     margin-left: -38px;
+    margin-top: 0;
   }
 }
 
 .more-list__item--icon2::before {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-burger.svg");
-  width: 37px;
-  height: 37px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 38px;
   top: 0;
   left: 0;
+  margin-top: 35px;
+  margin-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .more-list__item--icon2::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icon-burger.svg");
-    width: 77px;
-    height: 68px;
+    background-image: url("../img/icon-gift.svg");
+    width: 64px;
+    height: 75px;
     top: 60px;
     left: 50%;
-    margin-left: -38px;
+    margin-left: -32px;
+    margin-top: 0;
   }
 }
 
 .more-list__item--icon3::before {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-gift.svg");
-  width: 37px;
-  height: 37px;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 36px;
   top: 0;
   left: 0;
+  margin-top: 35px;
+  margin-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .more-list__item--icon3::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icon-gift.svg");
-    width: 64px;
-    height: 75px;
+    background-image: url("../img/icon-burger.svg");
+    width: 77px;
+    height: 68px;
     top: 55px;
     left: 50%;
     margin-left: -38px;
+    margin-top: 0;
   }
 }

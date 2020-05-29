@@ -19,42 +19,55 @@
   padding: 0;
 }
 
+// крестик
 .main-nav__toggle {
   position: absolute;
-  background-color: $color-main;
-  cursor: pointer;
-  border: none;
   top: 0;
   right: 0;
   margin-top: 18px;
   margin-right: 20px;
 
-  &:hover {
-    background-color: $color-main-hover;
+.main-nav--closed {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  outline: none;
+}
+
+.main-nav--closed:before,
+.main-nav--closed:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  left: 0;
+  width: 2px;
+  height: 26px;
+  z-index: 100;
   }
 
-  &:active {
-    background-color: $color-main-active;
+.main-nav--closed:before {
+  transform: rotate (45deg);
+}
+
+.main-nav--closed:after {
+  transform: rotate (-45deg);
+}
+
+
+
+.main-nav__toggle:hover {
+  color: #cde1ed;
   }
 }
 
-@media (min-width: $tablet-width) {
+.main-nav__toggle:active {
+    color: #a5c8df;
+}
+
+
+@media (min-width:$tablet-width) {
   .main-nav__toggle {
     display: none;
-  }
-}
-
-.main-nav__toggle-icon {
-  polygon {
-    fill: $color-background;
-
-    &:hover {
-      fill: #cde1ed;
-    }
-
-    &:active {
-      fill: #a5c8df;
-    }
   }
 }
 
@@ -66,13 +79,13 @@
   transform: translateX(-50%);
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width:$tablet-width) {
   .main-nav__logo {
     bottom: -16px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width:$desktop-width) {
   .main-nav__logo {
     bottom: -29px;
   }
